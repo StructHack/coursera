@@ -12,7 +12,7 @@ public class QuickUnion {
 
     private int root(int i){
         while (i != id[i]){
-            i = id[i];
+            i = id[i]; // chasing own self since root's id is root itself
         }
         return i;
     }
@@ -24,7 +24,7 @@ public class QuickUnion {
     public void union(int p, int q){
         int i = root(p);
         int j = root(q);
-        id[i] = j;
+        id[i] = j; // change root of p to point to root of q
     }
 
 }
