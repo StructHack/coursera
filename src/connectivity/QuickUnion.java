@@ -1,5 +1,4 @@
 package connectivity;
-
 public class QuickUnion {
     private int[] id;
 
