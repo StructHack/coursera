@@ -11,6 +11,7 @@ public class WeightedQuickUnion {
         }
     }
 
+
     private int root(int i){
 
         // path compression to shorten the depth of the nodes optimization on weighted quick find
